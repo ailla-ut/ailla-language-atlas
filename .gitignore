@@ -1,0 +1,30 @@
+ # OS files
+.DS_Store
+
+# Python build artifacts
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Raw/large data (regenerable via pipeline)
+data/ailla_raw_data.json
+data/ailla_items_checkpoint.json
+data/ailla_atlas_data.json
+data/items_dataset.csv
+data/extraction_report.txt
+data/ailla2_verification_report.txt
+data/date_verification_report.txt
+data/description_source_material.md
+
+# Institutional data (not for public distribution)
+AILLA2/
+
+# Docs
+docs/
+

@@ -1,0 +1,228 @@
+{
+  "storymap": {
+    "language": "pt",
+    "map_type": "stamen:terrain",
+    "slides": [
+      {
+        "type": "overview",
+        "text": {
+          "headline": "Línguas maias no arquivo AILLA",
+          "text": "<p>Uma jornada cronológica através da documentação de as línguas maias no Arquivo das Línguas Indígenas da América Latina (AILLA) da Universidade do Texas em Austin.</p><p> Este mapa apresenta <strong>18 idiomas</strong> com slides detalhados, abrangendo Mesoamérica (Guatemala, Belize, México). Além disso, 14 línguas são específicas no resumo final.</p><p> Os slides estão ordenados cronologicamente pelo início da documentação específica para cada idioma no acervo da AILLA.</p><p> <a href=\"https://ailla.utexas.org\" target=\"_blank\">Visitar o AILLA</a></p>"
+        },
+        "location": {
+          "lat": 16.0,
+          "lon": -90.5
+        }
+      },
+      {
+        "text": {
+          "headline": "Tzeltal",
+          "text": "<p>O tzeltal é uma língua maia falada por aproximadamente 589.000 pessoas nas terras altas de Chiapas, no México, onde permanece em uso vigoroso ao longo das gerações. O AILLA possui 343 itens relacionados ao tzeltal, com a documentação mais antiga datando da década de 1960, incluindo narrativas, conversas, cerimônias e orações. Entre os principais itens do acervo estão o Projeto de Documentação do Tzeltal de Gilles Polian, que registra diversos dialetos e gêneros de fala, e as gravações de campo de Brian Stross em Chiapas.</p><p> <em>Também conhecido como:</em> Bats&#39;il k&#39;op</p><p> <em>Países:</em> México</p><p> <em>Acervo do AILLA:</em> 343 itens (337 de acesso público), 13 coleções</p><p> <em>Datas de criação:</em> 1960-2016</p><p> <em>Datas de depósito:</em> 2006-2021</p><p> <em>ISO 639-3:</em> tzh</p><p> <a href=\"https://ailla.utexas.org/languages/175\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 16.7102,
+          "lon": -92.1189,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Tzotzil",
+          "text": "<p>O tzotzil é uma língua maia tzeltalã falada por aproximadamente 550.000 pessoas na região central de Chiapas, no México. O AILLA possui 692 itens relacionados ao tzotzil, dos quais apenas 160 são de acesso público. A documentação mais antiga dedicada ao tema provém das coleções de Victoria Bricker e Terrence Kaufman, da década de 1960. A maior coleção é composta pelas extensas gravações de vídeo e áudio de John Haviland, realizadas desde a década de 1970 até os dias atuais. O acervo é rico em narrativas, conversas e materiais etnográficos.</p><p> <em>Nome indígena:</em> Bats&#39;i k&#39;op</p><p> <em>Países:</em> México</p><p> <em>Acervo do AILLA:</em> 692 itens (160 de acesso público), 12 coleções</p><p> <em>Datas de criação:</em> 1960-2009</p><p> <em>Datas de depósito:</em> 2002-2021</p><p> <em>ISO 639-3:</em> tzo</p><p> <a href=\"https://ailla.utexas.org/languages/174\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 16.8094,
+          "lon": -92.6253,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Chorti",
+          "text": "<p>O ch&#39;orti&#39; é uma língua maia cholan oriental falada no leste da Guatemala e oeste de Honduras, com aproximadamente 16.700 falantes na Guatemala e nenhum falante nativo conhecido em Honduras. Considerada descendente direta da língua maia clássica usada em inscrições pré-colombianas, a coleção de ch&#39;orti&#39; da AILLA compreende 327 itens, com a documentação mais antiga datando de 1964. A coleção se baseia no extenso trabalho de campo de John Fought, realizado entre 1964 e 1967, que contém centenas de gravações, notas de campo e fotografias. Kerry Michael Hull contribuiu com uma gravação narrativa com texto interlinearizado, traduções e um dicionário abreviado.</p><p> <em>Nome indígena:</em> Ch&#39;orti&#39;</p><p> <em>Também conhecido como:</em> Chorti&#39;</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 327 itens (326 de acesso público), 9 coleções</p><p> <em>Datas de criação:</em> 1964-2017</p><p> <em>Datas de depósito:</em> 2002-2021</p><p> <em>ISO 639-3:</em> caa</p><p> <a href=\"https://ailla.utexas.org/languages/14\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 14.824,
+          "lon": -89.0928,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Chuj",
+          "text": "<p>O chuj é uma língua maia q&#39;anjob&#39;alan falada por aproximadamente 58.600 pessoas no departamento de Huehuetenango, na Guatemala. A AILLA possui 130 itens relacionados ao chuj, com a documentação mais antiga datando de 1964. A Coleção de Tradição Oral Chuj de Pedro Mateo Pedro e Jessica Coon contribui com narrativas que descrevem a cultura e a história maia, muitas com versões anotadas traduzidas para o espanhol, o inglês ou ambos. A coleção de Nicholas Hopkins contém extensas gravações de trabalho de campo, notas de campo e um dicionário da década de 1960.</p><p> <em>Também conhecido como:</em> Chuh, Chuhe, Chuj de San Mateo Ixtatán, Chuje, Koti&#39;</p><p> <em>Países:</em> México; Guatemala</p><p> <em>Acervo do AILLA:</em> 130 itens (125 de acesso público), 9 coleções</p><p> <em>Datas de criação:</em> 1962-2017</p><p> <em>Datas de depósito:</em> 2005-2021</p><p> <em>ISO 639-3:</em> cac</p><p> <a href=\"https://ailla.utexas.org/languages/157\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.8553,
+          "lon": -91.5857,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Mocho",
+          "text": "<p>O mocho é uma língua maia q&#39;anjob&#39;alan falada por aproximadamente 130 pessoas em Chiapas, México. A AILLA possui 237 itens relacionados ao mocho, com a documentação mais antiga datando de 1967. A coleção de Laura Martin é a maior, com gravações, transcrições e notas de campo a partir da década de 1970. As coleções de Lyle Campbell e Terrence Kaufman contribuem com extenso trabalho de campo do final da década de 1960, incluindo narrativas, orações e materiais de coleta de dados.</p><p> <em>Nome indígena:</em> Qato&#39;k</p><p> <em>Também conhecido como:</em> Motozintleco, Motocintleco</p><p> <em>Países:</em> México</p><p> <em>Acervo do AILLA:</em> 237 itens, 5 coleções</p><p> <em>Datas de criação:</em> 1966-1995</p><p> <em>Datas de depósito:</em> 2003-2020</p><p> <em>ISO 639-3:</em> mhc</p><p> <a href=\"https://ailla.utexas.org/languages/39\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.4027,
+          "lon": -92.3227,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Huasteco",
+          "text": "<p>O huasteco é uma língua maia falada por aproximadamente 169.000 pessoas nos estados mexicanos de San Luis Potosí e Veracruz. A AILLA possui 290 itens relacionados ao huasteco, com a documentação mais antiga datando de 1969. O acervo é composto predominantemente por narrativas e mitos, provenientes em grande parte da Coleção de Línguas Maias de Terrence Kaufman, com contribuições adicionais de Roberto Zavala Maldonado e Barbara Edmonson.</p><p> <em>Nome indígena:</em> Teenek</p><p> <em>Também conhecido como:</em> Wasteko, Tenek, Tenek</p><p> <em>Países:</em> México</p><p> <em>Acervo do AILLA:</em> 290 itens (258 de acesso público), 7 coleções</p><p> <em>Datas de criação:</em> 1968-2010</p><p> <em>Datas de depósito:</em> 2008-2022</p><p> <em>ISO 639-3:</em> hus</p><p> <a href=\"https://ailla.utexas.org/languages/156\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 21.3495,
+          "lon": -98.879,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Ch'ol",
+          "text": "<p>O ch&#39;ol é uma língua maia cholan ocidental falada por aproximadamente 255.000 pessoas em Chiapas, México. A AILLA possui 321 itens relacionados ao ch&#39;ol, com a documentação mais antiga datando de 1970 e 287 de acesso público. O acervo é rico em narrativas e histórias orais, com coleções dedicadas de Juan Jesus Vazquez Alvarez e Jessica Coon, e de Carol Rose Little, contendo gravações de áudio e vídeo com transcrições e traduções para o espanhol.</p><p> <em>Nome indígena:</em> Lakty&#39;añ</p><p> <em>Também como:</em> Chol</p><p> <em>Países:</em> México</p><p> <em>Acervo do AILLA:</em> 321 itens (287 de acesso público), 15 coleções</p><p> <em>Datas de criação:</em> 1968-2020</p><p> <em>Datas de depósito:</em> 2007-2021</p><p> <em>ISO 639-3:</em> ctu</p><p> <a href=\"https://ailla.utexas.org/languages/145\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 17.3627,
+          "lon": -92.4661,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Kaqchikel",
+          "text": "<p>O kaqchikel é uma língua maia quiché falada por aproximadamente 411.000 pessoas nas terras altas centrais da Guatemala. A AILLA possui 199 itens relacionados ao kaqchikel, com a documentação mais antiga datando de 1970. O acervo inclui narrativas, listas de palavras e materiais lexicais, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA) e do Projeto Linguístico Francisco Marroquin (PLFM), que contribuiu com um extenso levantamento dialetal em mais de 20 comunidades falantes de kaqchikel.</p><p> <em>Nome indígena:</em> Kaqchikel</p><p> <em>Também conhecido como:</em> Cakchiquel, Kaqchiquel</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 199 itens (194 de acesso público), 12 coleções</p><p> <em>Datas de criação:</em> 1968-2020</p><p> <em>Datas de depósito:</em> 2002-2021</p><p> <em>ISO 639-3:</em> bolo</p><p> <a href=\"https://ailla.utexas.org/languages/30\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 14.7056,
+          "lon": -90.8034,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "K'ichee'",
+          "text": "<p>O quiché é uma língua maia falada por aproximadamente 1.050.000 pessoas nas terras altas centrais da Guatemala. A AILLA possui 343 itens relacionados ao quiché, com a documentação mais antiga datando de 1971. O acervo inclui narrativas, listas de palavras e materiais lexicais, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA), do Projeto de Preservação do Patrimônio Cultural Maia e do Projeto Linguístico Francisco Marroquin (PLFM), que contribuiu com levantamentos dialetais em aproximadamente 20 comunidades falantes de quiché.</p><p> <em>Nome indígena:</em> K&#39;ichee&#39;</p><p> <em>Também conhecido como:</em> Quiché, Central K&#39;iche&#39;, Central Quiché, Chiquel, Qach&#39;ab&#39;al, Qatzij</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 343 itens (334 de acesso público), 15 coleções</p><p> <em>Datas de criação:</em> 1962-2019</p><p> <em>Datas de depósito:</em> 2002-2023</p><p> <em>ISO 639-3:</em> quc</p><p> <a href=\"https://ailla.utexas.org/languages/131\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 14.7648,
+          "lon": -91.5845,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Maya, Yucatec",
+          "text": "<p>O maia iucateque é falado por aproximadamente 801.000 pessoas na Península de Yucatán, no México, e no norte de Belize, sendo a língua maia mais falada fora da Guatemala. A AILLA possui 126 itens relacionados ao maia iucateque, com a documentação mais antiga datando de 1971. A coleção de Victoria Bricker contribui com histórias orais da Guerra das Castas e gravações de carnaval, enquanto a coleção de Melissa Frazier fornece gravações da língua falada e William Blunk-Fernández e Michael Carrasco contribuíram com narrativas tradicionais.</p><p> <em>Nome indígena:</em> Mayaa t&#39;aan</p><p> <em>Também como:</em> Maya</p><p> <em>Países:</em> México; Belize</p><p> <em>Acervo do AILLA:</em> 126 itens (110 de acesso público), 16 coleções</p><p> <em>Datas de criação:</em> 1964-2022</p><p> <em>Datas de depósito:</em> 2005-2023</p><p> <em>ISO 639-3:</em> yua</p><p> <a href=\"https://ailla.utexas.org/languages/85\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 20.5579,
+          "lon": -88.9876,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Mam",
+          "text": "<p>Mam é uma língua maia falada por aproximadamente 591.000 pessoas nas terras altas ocidentais da Guatemala. O AILLA possui 263 itens relacionados ao Mam, dos quais apenas 192 são de acesso público, sendo a documentação mais antiga datada de 1972. O acervo inclui narrativas, conversas e listas de palavras, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA) e das gravações da língua infantil feitas por Clifton Pye. A coleção de Nora England contribui com narrativas de trabalho de campo da década de 1970.</p><p> <em>Também conhecido como:</em> B&#39;anax Mam, Qyool</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 263 itens (192 de acesso público), 9 coleções</p><p> <em>Datas de criação:</em> 1962-2017</p><p> <em>Datas de depósito:</em> 2002-2021</p><p> <em>ISO 639-3:</em> mam</p><p> <a href=\"https://ailla.utexas.org/languages/33\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.2527,
+          "lon": -91.781,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Popti'",
+          "text": "<p>Popti&#39; é uma língua maia Q&#39;anjob&#39;alan falada por aproximadamente 33.000 pessoas no departamento de Huehuetenango, na Guatemala, e em partes de Chiapas, no México. A AILLA possui 117 itens relacionados ao Popti&#39;, com a documentação mais antiga datando de 1972. O acervo inclui narrativas, descrições e listas de palavras, com contribuições da Coleção da Comunidade Linguística Jakalteka/Popti&#39; da Academia de Línguas Maias da Guatemala (ALMG), da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA) e das gravações de campo do doutorado de Colette Grinevald em Jacaltenango, no início da década de 1970.</p><p> <em>Também conhecido como:</em> Jakalteko</p><p> <em>Países:</em> México; Guatemala</p><p> <em>Acervo do AILLA:</em> 117 itens (116 de acesso público), 7 coleções</p><p> <em>Datas de criação:</em> 1962-2019</p><p> <em>Datas de depósito:</em> 2002-2022</p><p> <em>ISO 639-3:</em> jac</p><p> <a href=\"https://ailla.utexas.org/languages/32\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.5862,
+          "lon": -91.7355,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Q'anjob'al",
+          "text": "<p>O q&#39;anjob&#39;al é uma língua maia falada por aproximadamente 177.000 pessoas no departamento de Huehuetenango, na Guatemala, e em partes de Chiapas, no México. A AILLA possui 215 itens relacionados ao q&#39;anjob&#39;al, dos quais apenas 112 são de acesso público, sendo a documentação mais antiga datada de 1972. O acervo inclui conversas, narrativas e conjuntos de dados, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA) e das gravações da língua infantil feitas por Clifton Pye. A coleção de Laura Martin contribui com gravações de trabalho de campo e dados de dissertação do início da década de 1970.</p><p> <em>Também como:</em> Conob</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 215 itens (112 de acesso público), 12 coleções</p><p> <em>Datas de criação:</em> 1962-2017</p><p> <em>Datas de depósito:</em> 2002-2021</p><p> <em>ISO 639-3:</em> kjb</p><p> <a href=\"https://ailla.utexas.org/languages/29\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.6627,
+          "lon": -91.3801,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Poqomchi'",
+          "text": "<p>Poqomchi&#39; é uma língua maia quiché falada por aproximadamente 133.000 pessoas nos departamentos de Alta Verapaz e Baja Verapaz, na Guatemala. A AILLA possui 109 itens relacionados ao Poqomchi&#39;, sendo a documentação mais antiga datada de 1998. O acervo inclui narrativas e listas de palavras, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA).</p><p> <em>Nome indígena:</em> Poqomchii&#39;</p><p> <em>Também conhecido como:</em> Tactic Pokomchí, Pocomchí, Poconchí, Pokomchí, Pokonchí</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 109 itens, 5 coleções</p><p> <em>Datas de criação:</em> 1964-2017</p><p> <em>Datas de depósito:</em> 2002-2020</p><p> <em>ISO 639-3:</em> poh</p><p> <a href=\"https://ailla.utexas.org/languages/34\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.2792,
+          "lon": -90.3465,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Awakateko",
+          "text": "<p>Awakateko é uma língua maia mameana falada por aproximadamente 10.100 pessoas no departamento de Huehuetenango, na Guatemala. A AILLA possui 130 itens relacionados ao awakateko, com a documentação mais antiga datando de 2003. O acervo é rico em descrições, narrativas e histórias orais, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA).</p><p> <em>Nome indígena:</em> Awakateko</p><p> <em>Também conhecido como:</em> Aguacateco, Aguacatec</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 130 itens, 6 coleções</p><p> <em>Datas de criação:</em> 1964-2017</p><p> <em>Datas de depósito:</em> 2008-2020</p><p> <em>ISO 639-3:</em> agu</p><p> <a href=\"https://ailla.utexas.org/languages/177\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.3778,
+          "lon": -91.2817,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Sakapulteko",
+          "text": "<p>Sakapulteko é uma língua maia quiché falada por aproximadamente 6.530 pessoas no município de Sacapulas, no departamento de Quiché, na Guatemala. A AILLA possui 112 itens relacionados ao Sakapulteko, sendo a documentação mais antiga datada de 2003. O acervo inclui narrativas, histórias e descrições, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA).</p><p> <em>Também conhecido como:</em> Sacapulteco, Sacapulas K&#39;iche&#39;</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 112 itens (111 de acesso público), 4 coleções</p><p> <em>Datas de criação:</em> 1971-2017</p><p> <em>Datas de depósito:</em> 2008-2020</p><p> <em>ISO 639-3:</em> quv</p><p> <a href=\"https://ailla.utexas.org/languages/181\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.3035,
+          "lon": -91.0263,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Uspanteko",
+          "text": "<p>O uspanteko é uma língua maia quiché falada por aproximadamente 5.130 pessoas no departamento de Quiché, na Guatemala. A AILLA possui 134 itens relacionados ao uspanteko, com a documentação mais antiga datando de 2003. O acervo inclui narrativas, histórias e descrições, provenientes principalmente da coleção Oxlajuuj Keej Maya&#39; Ajtz&#39;iib&#39; (OKMA). A coleção de Ryan Bennett e Robert Henderson contribui com materiais de pesquisa sobre prosódia.</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 134 itens, 4 coleções</p><p> <em>Datas de criação:</em> 1968-2019</p><p> <em>Datas de depósito:</em> 2008-2020</p><p> <em>ISO 639-3:</em> usp</p><p> <a href=\"https://ailla.utexas.org/languages/183\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.4254,
+          "lon": -90.8123,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Ixil",
+          "text": "<p>O ixil é uma língua maia falada por aproximadamente 115.000 pessoas no departamento de Quiché, na Guatemala. A AILLA possui 643 itens relacionados ao ixil, dos quais apenas 239 são de acesso público, sendo a documentação mais antiga datada de 2005. A maior coleção é a Coleção de Conversas/Narrativas Maias Ixil, que apresenta histórias pessoais, autobiografias e relatos de experiências de guerra gravados por membros do Grupo de Mujeres/Hombres por la Paz em Nebaj. A Coleção Ixil de Danny Law contribui com gravações, transcrições e análises dos dialetos chajul, cotzal e nebaj.</p><p> <em>Países:</em> Guatemala</p><p> <em>Acervo do AILLA:</em> 643 itens (239 de acesso público), 7 coleções</p><p> <em>Datas de criação:</em> 1964-2018</p><p> <em>Datas de depósito:</em> 2008-2021</p><p> <em>ISO 639-3:</em> ixl</p><p> <a href=\"https://ailla.utexas.org/languages/46\" target=\"_blank\">Ver no AILLA</a></p>"
+        },
+        "location": {
+          "lat": 15.4732,
+          "lon": -91.1761,
+          "line": true
+        }
+      },
+      {
+        "text": {
+          "headline": "Línguas adicionais",
+          "text": "<p>Embora o acervo AILLA possua conteúdo significativo sobre o idioma a seguir, os materiais públicos representam menos de 100 itens:</p><p> <a href=\"https://ailla.utexas.org/languages/54\" target=\"_blank\">Tojolab&#39;al</a> (211 itens, 37 públicos)</p><p> As seguintes 13 línguas da família maia têm menos de 100 itens no acervo atual do AILLA. À medida que as coleções do AILLA crescem, essas línguas poderão ser incluídas nas futuras atualizações deste mapa.</p><p> <a href=\"https://ailla.utexas.org/languages/179\" target=\"_blank\">Achi</a> (32 itens)<br> <a href=\"https://ailla.utexas.org/languages/127\" target=\"_blank\">Akateko</a> (51 itens, 47 públicos)<br> <a href=\"https://ailla.utexas.org/languages/176\" target=\"_blank\">Chicomuceltec</a> (1 item)<br> <a href=\"https://ailla.utexas.org/languages/48\" target=\"_blank\">Chontal, Tabasco</a> (55 itens, 42 públicos)<br> <a href=\"https://ailla.utexas.org/languages/184\" target=\"_blank\">Itza&#39;</a> (6 itens)<br> <a href=\"https://ailla.utexas.org/languages/149\" target=\"_blank\">Lacandona</a> (61 itens)<br> <a href=\"https://ailla.utexas.org/languages/185\" target=\"_blank\">Mopán</a> (9 itens)<br> <a href=\"https://ailla.utexas.org/languages/180\" target=\"_blank\">Poqomam</a> (74 itens)<br> <a href=\"https://ailla.utexas.org/languages/196\" target=\"_blank\">Q&#39;eqchi&#39;</a> (86 itens)<br> <a href=\"https://ailla.utexas.org/languages/182\" target=\"_blank\">Sipakapense</a> (6 itens)<br> <a href=\"https://ailla.utexas.org/languages/178\" target=\"_blank\">Tektiteko</a> (98 itens)<br> <a href=\"https://ailla.utexas.org/languages/533\" target=\"_blank\">Tuzanteco</a> (5 itens)<br> <a href=\"https://ailla.utexas.org/languages/197\" target=\"_blank\">Tz&#39;utujil</a> (76 itens, 70 públicos)</p><p> <a href=\"https://ailla.utexas.org\" target=\"_blank\">Explore todas as coleções do AILLA</a></p>"
+        },
+        "location": {
+          "lat": 16.0,
+          "lon": -90.5
+        }
+      }
+    ],
+    "calculate_zoom": true
+  }
+}
