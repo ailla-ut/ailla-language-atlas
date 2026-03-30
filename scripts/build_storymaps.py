@@ -59,6 +59,16 @@ FAMILIES: dict[str, dict[str, Any]] = {
 
 AILLA_BASE_URL = "https://ailla.utexas.org"
 
+# Languages with 0 items in AILLA2 but represented through multi-language
+# collections. These aren't individually tagged at the item level in the
+# spreadsheets, but materials exist within broader collections.
+# Each entry: (language_id, name, language_url, collection_name, collection_url)
+COLLECTION_ONLY_LANGUAGES: list[tuple[int, str, str, str, str]] = [
+    (476, "Ch'olti'", f"{AILLA_BASE_URL}/languages/476",
+     "Mayan Languages Collection of Terrence Kaufman",
+     f"{AILLA_BASE_URL}/collections/783"),
+]
+
 # Languages where 50%+ of items are restricted are excluded from featured slides
 # but mentioned in the summary slide (their metadata is visible on AILLA, but
 # the holdings are predominantly access-controlled)
@@ -121,17 +131,17 @@ def build_slide_text(row: pd.Series) -> str:
     # Indigenous name
     indigenous = row.get("indigenous_name", "")
     if pd.notna(indigenous) and str(indigenous).strip():
-        parts.append(f"<p><em>Indigenous name:</em> {indigenous}</p>")
+        parts.append(f"<p><strong>Indigenous name:</strong> {indigenous}</p>")
 
     # Alternative names
     alt_names = row.get("alternative_name", "")
     if pd.notna(alt_names) and str(alt_names).strip():
-        parts.append(f"<p><em>Also known as:</em> {alt_names}</p>")
+        parts.append(f"<p><strong>Also known as:</strong> {alt_names}</p>")
 
     # Countries
     countries = row.get("countries", "")
     if pd.notna(countries) and str(countries).strip():
-        parts.append(f"<p><em>Countries:</em> {countries}</p>")
+        parts.append(f"<p><strong>Countries:</strong> {countries}</p>")
 
     # Holdings summary
     total = int(row["total_items"]) if pd.notna(row["total_items"]) else 0
@@ -150,7 +160,7 @@ def build_slide_text(row: pd.Series) -> str:
         )
 
     if holdings_parts:
-        parts.append(f"<p><em>AILLA holdings:</em> {', '.join(holdings_parts)}</p>")
+        parts.append(f"<p><strong>AILLA holdings:</strong> {', '.join(holdings_parts)}</p>")
 
     # Dates created (from item creation dates)
     earliest = row.get("earliest_item_year")
@@ -159,10 +169,10 @@ def build_slide_text(row: pd.Series) -> str:
         earliest_int = int(earliest)
         latest_int = int(latest) if pd.notna(latest) else earliest_int
         if earliest_int == latest_int:
-            parts.append(f"<p><em>Dates created:</em> {earliest_int}</p>")
+            parts.append(f"<p><strong>Dates created:</strong> {earliest_int}</p>")
         else:
             parts.append(
-                f"<p><em>Dates created:</em> {earliest_int}-{latest_int}</p>"
+                f"<p><strong>Dates created:</strong> {earliest_int}-{latest_int}</p>"
             )
 
     # Dates deposited (from file upload dates)
@@ -172,16 +182,16 @@ def build_slide_text(row: pd.Series) -> str:
         dep_earliest_int = int(dep_earliest)
         dep_latest_int = int(dep_latest) if pd.notna(dep_latest) else dep_earliest_int
         if dep_earliest_int == dep_latest_int:
-            parts.append(f"<p><em>Dates deposited:</em> {dep_earliest_int}</p>")
+            parts.append(f"<p><strong>Dates deposited:</strong> {dep_earliest_int}</p>")
         else:
             parts.append(
-                f"<p><em>Dates deposited:</em> {dep_earliest_int}-{dep_latest_int}</p>"
+                f"<p><strong>Dates deposited:</strong> {dep_earliest_int}-{dep_latest_int}</p>"
             )
 
     # ISO code
     iso = row.get("iso_639_3_code", "")
     if pd.notna(iso) and str(iso).strip():
-        parts.append(f"<p><em>ISO 639-3:</em> {iso}</p>")
+        parts.append(f"<p><strong>ISO 639-3:</strong> {iso}</p>")
 
     # AILLA link
     url = row.get("ailla_language_url", "")
@@ -301,18 +311,21 @@ def _format_summary_entry(row: pd.Series) -> str:
 def build_summary_slide(below_threshold: pd.DataFrame,
                         restricted: pd.DataFrame,
                         config: dict[str, Any],
-                        family_name: str) -> dict[str, Any]:
+                        family_name: str,
+                        collection_only: list[tuple[int, str, str, str, str]] | None = None) -> dict[str, Any]:
     """Build the closing summary slide for non-featured languages.
 
-    Separates languages into two groups:
-    1. Below threshold: fewer items than required for a featured slide
-    2. Restricted holdings: meet the item threshold but 50%+ restricted
+    Separates languages into three groups:
+    1. Restricted holdings: meet the item threshold but 50%+ restricted
+    2. Below threshold: fewer items than required for a featured slide
+    3. Collection-only: 0 items in AILLA2 but represented through multi-language collections
 
     Args:
         below_threshold: DataFrame of languages below the item threshold.
         restricted: DataFrame of languages excluded due to high restricted %.
         config: Family configuration dict.
         family_name: Name of the language family.
+        collection_only: List of (language_id, name, lang_url, collection_name, collection_url) tuples.
 
     Returns:
         StoryMapJS slide dict.
@@ -346,6 +359,22 @@ def build_summary_slide(below_threshold: pd.DataFrame,
             f"As AILLA's collections grow, these languages may be featured in future "
             f"updates to this map.</p>"
             f"<p>{'<br>'.join(lang_list)}</p>"
+        )
+
+    # Section 3: Languages represented only through multi-language collections
+    if collection_only is None:
+        collection_only = []
+    if collection_only:
+        col_list = []
+        for _lid, name, lang_url, col_name, col_url in sorted(collection_only, key=lambda x: x[1]):
+            col_list.append(
+                f'<a href="{lang_url}" target="_blank">{name}</a> '
+                f'(materials in the <a href="{col_url}" target="_blank">{col_name}</a>)'
+            )
+        sections.append(
+            f"<p>The following {'language is' if len(collection_only) == 1 else f'{len(collection_only)} languages are'} "
+            f"represented in AILLA through multi-language collections:</p>"
+            f"<p>{'<br>'.join(col_list)}</p>"
         )
 
     sections.append(
@@ -443,11 +472,19 @@ def build_storymap(df: pd.DataFrame, family_name: str,
         na_position="last",
     )
 
+    # Count languages represented only through multi-language collections
+    collection_only = [
+        entry for entry in COLLECTION_ONLY_LANGUAGES
+        if entry[0] in family_df["language_id"].values
+    ]
+    if collection_only:
+        print(f"Collection-only: {len(collection_only)}")
+
     # Build slides
     slides = []
 
     # 1. Title/overview slide
-    summary_count = len(below) + len(restricted_excluded)
+    summary_count = len(below) + len(restricted_excluded) + len(collection_only)
     title_slide = build_title_slide(config, len(featured), summary_count)
     slides.append(title_slide)
 
@@ -458,11 +495,12 @@ def build_storymap(df: pd.DataFrame, family_name: str,
         print(f"  Slide: {build_headline(row)}")
 
     # 3. Closing summary slide (if there are non-featured languages)
-    if len(below) > 0 or len(restricted_excluded) > 0:
-        summary = build_summary_slide(below, restricted_excluded, config, family_name)
+    if len(below) > 0 or len(restricted_excluded) > 0 or len(collection_only) > 0:
+        summary = build_summary_slide(below, restricted_excluded, config, family_name, collection_only)
         slides.append(summary)
         print(f"  Summary slide: {len(below)} below threshold, "
-              f"{len(restricted_excluded)} restricted")
+              f"{len(restricted_excluded)} restricted, "
+              f"{len(collection_only)} collection-only")
 
     # Assemble StoryMapJS structure
     storymap = {
