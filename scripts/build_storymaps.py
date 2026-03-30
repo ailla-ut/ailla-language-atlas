@@ -63,11 +63,9 @@ AILLA_BASE_URL = "https://ailla.utexas.org"
 # collections. These aren't individually tagged at the item level in the
 # spreadsheets, but materials exist within broader collections.
 # Each entry: (language_id, name, language_url, collection_name, collection_url)
-COLLECTION_ONLY_LANGUAGES: list[tuple[int, str, str, str, str]] = [
-    (476, "Ch'olti'", f"{AILLA_BASE_URL}/languages/476",
-     "Mayan Languages Collection of Terrence Kaufman",
-     f"{AILLA_BASE_URL}/collections/783"),
-]
+# Note: Ch'olti' (476) was previously listed here but is now correctly counted
+# by the supplemental pass in extract_ailla2.py.
+COLLECTION_ONLY_LANGUAGES: list[tuple[int, str, str, str, str]] = []
 
 # Languages where 50%+ of items are restricted are excluded from featured slides
 # but mentioned in the summary slide (their metadata is visible on AILLA, but
