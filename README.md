@@ -69,7 +69,7 @@ uv sync
 - `data/family_analysis.csv` - Language family rankings (54 families)
 - `data/curated_descriptions.json` - Curated narrative descriptions for 28 featured languages
 
-See [Dataset Documentation](docs/dataset_documentation.md) for field definitions and [Methodology](docs/methodology.md) for technical details.
+See [Methodology](methodology.md) for technical details.
 
 ## Citation
 
