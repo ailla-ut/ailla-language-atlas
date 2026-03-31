@@ -21,9 +21,6 @@ Usage:
     uv run scripts/ailla_scraper.py --resume-items     # Resume interrupted items extraction
     uv run scripts/ailla_scraper.py --compare-ailla2   # Compare API items vs AILLA2 spreadsheets
 
-Author: LBDS Fellow, Benson Latin American Collection
-Date: 2026-01-28
-Updated: 2026-02-22 (added items extraction with temporal data)
 """
 
 import requests

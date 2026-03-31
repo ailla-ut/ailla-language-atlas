@@ -19,8 +19,6 @@ Output:
     - Terminal: Ranked summary + top-10 shortlist with commentary
     - data/family_analysis.csv: Full rankings for all families
 
-Author: LBDS Fellow, Benson Latin American Collection
-Date: 2026-02-23
 """
 
 import pandas as pd
