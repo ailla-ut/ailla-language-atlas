@@ -1,5 +1,13 @@
 # AILLA Language Atlas: Methodology
 
+## Contents
+- [Overview](#overview)
+- [Data Sources](#data-sources)
+- [Pipeline Stages](#pipeline-stages)
+- [Editorial Decisions](#editorial-decisions)
+- [Validation](#validation)
+- [Notes](#notes)
+
 ## Overview
 
 The AILLA Language Atlas is built through a six-stage data pipeline that extracts metadata from two sources, ranks language families by documentation depth, assigns geographic coordinates, generated interactive StoryMapJS visualizations, and translates them into three languages. The pipeline processes metadata for 641 languages across 263 archival collections, ultimately producing a pair of trilingual interactive maps covering the Mayan and Quechua language families.
