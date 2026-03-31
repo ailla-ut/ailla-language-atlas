@@ -20,7 +20,7 @@ The maps can be embedded in any website via iframe:
 
 ```html
 <iframe src="https://ailla-ut.github.io/ailla-language-atlas/preview_mayan.html"
-        width="100%" height="600" frameborder="0"></iframe>
+        width="100%" height="800" frameborder="0"></iframe>
 ```
 
 ## What the Maps Show
