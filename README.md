@@ -1,12 +1,13 @@
 # AILLA Language Atlas
 
-Interactive StoryMapJS visualizations of indigenous language documentation in the [Archive of the Indigenous Languages of Latin America (AILLA)](https://ailla.utexas.org) at the University of Texas at Austin.
+Interactive StoryMapJS visualizations of Indigenous language documentation in the [Archive of the Indigenous Languages of Latin America (AILLA)](https://ailla.utexas.org) at the University of Texas at Austin.
 
 ## About
 
 The AILLA Language Atlas maps two of the most extensively documented language families in AILLA's holdings: the **Mayan languages** of Mesoamerica and the **Quechua languages** of the Andes. Each map plots languages geographically and orders them chronologically by the start of dedicated documentation, revealing spatial and temporal patterns in how these languages have been recorded and preserved.
 
-The atlas draws on AILLA's metadata for 641 indigenous languages across 255 archival collections, with curated descriptions for 27 featured languages. All maps are available in English, Spanish, and Portuguese.
+The atlas draws on AILLA's metadata for over 500 Indigenous languages across 263 archival collections, with curated descriptions for 28 featured languages. All maps are available in English, Spanish, and Portuguese.
+
 
 ## View the Maps
 
@@ -24,9 +25,9 @@ The maps can be embedded in any website via iframe:
 
 ## What the Maps Show
 
-**Mayan map:** 18 featured languages with 100+ items each, plus a summary slide listing 14 additional languages. Covers Guatemala, Mexico, and Belize, with documentation spanning from the 1960s to the present.
+**Mayan map:** 19 featured languages with 100+ items each, plus a summary slide listing 14 additional languages. Covers Guatemala and Mexico with documentation spanning from the 1960s to the present.
 
-**Quechua map:** 9 featured languages with 5+ items each, plus a summary slide listing 5 additional languages. Covers Peru, Ecuador, Colombia, Bolivia, and Argentina, with documentation from 1959 to 2018.
+**Quechua map:** 9 featured languages with 5+ items each, plus a summary slide listing 6 additional languages. Covers Peru, Ecuador, Colombia, Bolivia, and Argentina, with documentation from 1959 to 2018.
 
 Each language slide includes:
 - Speaker population and geographic context
@@ -64,9 +65,9 @@ uv sync
 ## Datasets
 
 - `data/languages_dataset.csv` - Primary dataset (641 languages, 25 fields)
-- `data/collections_dataset.csv` - Collection metadata (255 collections)
+- `data/collections_dataset.csv` - Collection metadata (263 collections)
 - `data/family_analysis.csv` - Language family rankings (54 families)
-- `data/curated_descriptions.json` - Curated narrative descriptions for 27 featured languages
+- `data/curated_descriptions.json` - Curated narrative descriptions for 28 featured languages
 
 See [Dataset Documentation](docs/dataset_documentation.md) for field definitions and [Methodology](docs/methodology.md) for technical details.
 
@@ -86,6 +87,6 @@ All datasets and text derived from AILLA materials are available under a Creativ
 
 **Fellowship support:** Latin American and Iberian Digital Scholarship (LBDS) Fellowship, LLILAS Benson Latin American Studies and Collections, University of Texas at Austin
 
-**Director:** Dr. Susan Smythe Kung
+**AILLA Coordinator:** Dr. Susan Smythe Kung
 
 AI tools (Claude Code) were used for the collection and analysis of AILLA data, within the construction of the StoryMaps, and for translation (Google Cloud Translation API).
