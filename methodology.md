@@ -32,4 +32,4 @@ The extracted data is reorganized into CSV tables with separate columns for each
 
 ### AILLA2 Extraction (`scripts/extract_ailla2.py`)
 
-This is the most complex stage. It reasds all 7 Excel workbooks 
+This is the most complex stage. It reads all 7 Excel workbooks and computes per-language statistics: total item counts, public item counts, creation date ranges, and deposit date ranges.
