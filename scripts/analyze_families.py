@@ -19,6 +19,8 @@ Output:
     - Terminal: Ranked summary + top-10 shortlist with commentary
     - data/family_analysis.csv: Full rankings for all families
 
+Author: LBDS Fellow, Benson Latin American Collection
+Date: 2026-02-23
 """
 
 import pandas as pd
@@ -28,13 +30,12 @@ from pathlib import Path
 # Paths
 DATA_DIR = Path("data")
 LANGUAGES_FILE = DATA_DIR / "languages_dataset.csv"
-ITEMS_FILE = DATA_DIR / "items_dataset.csv"
 COLLECTIONS_FILE = DATA_DIR / "collections_dataset.csv"
 OUTPUT_FILE = DATA_DIR / "family_analysis.csv"
 
 
-def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Load and validate the three input datasets."""
+def load_data() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Load and validate the input datasets."""
     print("Loading datasets...")
 
     if not LANGUAGES_FILE.exists():
@@ -50,16 +51,13 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         print("  Run the full scraper first: uv run scripts/ailla_scraper.py")
         sys.exit(1)
 
-    items = pd.read_csv(ITEMS_FILE) if ITEMS_FILE.exists() else pd.DataFrame()
-    print(f"  Items: {len(items)} records")
-
     collections = pd.read_csv(COLLECTIONS_FILE) if COLLECTIONS_FILE.exists() else pd.DataFrame()
     print(f"  Collections: {len(collections)} records")
 
-    return languages, items, collections
+    return languages, collections
 
 
-def analyze_families(languages: pd.DataFrame, items: pd.DataFrame) -> pd.DataFrame:
+def analyze_families(languages: pd.DataFrame) -> pd.DataFrame:
     """
     Compute metrics for each language family.
 
@@ -300,7 +298,7 @@ def print_top_10_report(df: pd.DataFrame) -> None:
             print(f"  Date range:   {int(row['earliest_year'])} - {int(row['latest_year'])} "
                   f"({row['year_span']} year span)")
         else:
-            print(f"  Date range:   No temporal data")
+            print("  Date range:   No temporal data")
 
         print(f"  Date coverage: {row['pct_languages_with_dates']:.0f}% of languages with items have dates")
         print(f"  Countries:    {row['num_countries']} ({row['countries_list']})")
@@ -392,7 +390,7 @@ def print_recommendations(df: pd.DataFrame) -> None:
         (df["num_countries"] >= 3)
     ]
 
-    print(f"\nFamilies meeting ALL ideal criteria (10-30 langs, dates, 3+ countries):")
+    print("\nFamilies meeting ALL ideal criteria (10-30 langs, dates, 3+ countries):")
     if len(ideal) > 0:
         for _, row in ideal.head(5).iterrows():
             print(f"  - {row['family_name']}: {row['num_languages']} langs, "
@@ -402,7 +400,7 @@ def print_recommendations(df: pd.DataFrame) -> None:
         print("  None meet all criteria. Consider relaxing constraints.")
 
     # Families to avoid
-    print(f"\nFamilies to AVOID (too few items, no dates, or single country):")
+    print("\nFamilies to AVOID (too few items, no dates, or single country):")
     avoid = df[
         (df["total_items"] < 10) |
         ((df["year_span"] == 0) & (df["num_countries"] <= 1))
@@ -417,12 +415,6 @@ def print_recommendations(df: pd.DataFrame) -> None:
             reasons.append(f"only {row['num_countries']} country")
         print(f"  - {row['family_name']}: {', '.join(reasons)}")
 
-    # Geographic diversity check
-    print(f"\nGeographic diversity tip:")
-    print(f"  Choose families from different regions for variety. For example:")
-    print(f"  - One Mesoamerican family (Mexico/Central America)")
-    print(f"  - One South American family (Amazonia/Andes)")
-    print(f"  - One family spanning both regions or including Caribbean")
 
 
 def main():
@@ -432,7 +424,7 @@ def main():
     print("=" * 100)
 
     # Load data
-    languages, items, collections = load_data()
+    languages, collections = load_data()
 
     # Verify temporal data is populated
     has_items = pd.to_numeric(languages["total_items"], errors="coerce").fillna(0)
@@ -447,7 +439,7 @@ def main():
     print(f"  Languages with date ranges: {has_dates.sum()}")
 
     # Analyze families
-    family_df = analyze_families(languages, items)
+    family_df = analyze_families(languages)
 
     # Save to CSV
     family_df.to_csv(OUTPUT_FILE, index=True, encoding="utf-8")
