@@ -99,7 +99,7 @@ Curated descriptions list native researchers and Indigenous communities before A
 
 ### Description Sources
 
-Curated descriptions draw on two approved external sources for opening context (speaker populations, geographic location, linguistic classification): Wikipedia and Ethnologue (approved by Dr. Kung). All remaining content comes from AILLA-verifiable data: collection names, contributor names, genre distributions, item counts, and date ranges. Specific place names from collection descriptions are not included unless independently verified, since they may reflect a single researcher's fieldwork site rather than the full geographic range of the language.
+Curated descriptions draw on two approved external sources for general language context (speaker populations, geographic location, linguistic classification): Wikipedia and Ethnologue (approved by Dr. Kung). All remaining content comes from AILLA-verifiable data: collection names, contributor names, genre distributions, item counts, and date ranges. Specific place names from collection descriptions are not included unless independently verified, since they may reflect a single researcher's fieldwork site rather than the full geographic range of the language.
 
 ## Validation
 
