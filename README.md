@@ -89,4 +89,4 @@ All datasets and text derived from AILLA materials are available under a Creativ
 
 **AILLA Coordinator:** Dr. Susan Smythe Kung
 
-AI tools (Claude Code) were used for the collection and analysis of AILLA data, within the construction of the StoryMaps, and for translation (Google Cloud Translation API).
+Claude Code (Anthropic) was used as a coding assistant during pipeline development. Translations into Spanish and Portuguese were generated via the Google Cloud Translation API and reviewed for accuracy.
